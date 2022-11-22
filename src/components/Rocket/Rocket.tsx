@@ -18,7 +18,7 @@ import './Rocket.css';
 const RocketComponent = () => {
   // component with performance bottleneck
   useEffect(() => {
-    for (let i = 0; i < 100_000; i++) {
+    for (let i = 0; i < 1_000_000; i++) {
       console.log('hola');
     }
   }, []);
