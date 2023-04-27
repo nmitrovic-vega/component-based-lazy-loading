@@ -5,7 +5,9 @@ import astronaut from './assets/images/astronaut.png';
 import './App.css';
 
 // import RocketComponent from './components/Rocket/Rocket';
-const RocketComponent = React.lazy(() => import('./components/Rocket/Rocket'));
+const RocketSection = React.lazy(
+  () => import('./components/RocketSection/RocketSection')
+);
 
 function App() {
   const sectionTwoRef = useRef<HTMLDivElement>(null);
@@ -18,7 +20,7 @@ function App() {
         <img src={astronaut} className="astronaut" alt="astronaut" />
       </div>
       <div ref={sectionTwoRef} className="section section-second">
-        <RocketComponent />
+        <RocketSection />
       </div>
       {/* when second section is visible on the screen, we will start lazy loading of rocket loader component */}
       {isVisible && (
