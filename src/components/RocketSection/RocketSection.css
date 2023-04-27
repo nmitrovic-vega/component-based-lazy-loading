@@ -3,7 +3,7 @@
     background-image: url('../../assets/images/rocket-background.jpg');
     background-size: cover;
     width: 100vw;
-    min-height: 800px;
+    min-height: 500px;
     display: flex;
     align-items: center;
 }
