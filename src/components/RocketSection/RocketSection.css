@@ -1,0 +1,9 @@
+.rocket-background {
+    position: relative;
+    background-image: url('../../assets/images/rocket-background.jpg');
+    background-size: cover;
+    width: 100vw;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
